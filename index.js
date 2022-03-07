@@ -1,12 +1,12 @@
-const SHP = require('simple-hypercore-protocol')
-const crypto = require('hypercore-crypto')
+const SHP = require('@web4/simple-bit-protocol')
+const crypto = require('@web4/bit-crypto')
 const timeout = require('timeout-refresh')
 const inspect = require('inspect-custom-symbol')
 const Nanoguard = require('nanoguard')
 const pretty = require('pretty-hash')
 const Message = require('abstract-extension')
 const { Duplex } = require('streamx')
-const debug = require('debug')('hypercore-protocol')
+const debug = require('debug')('bit-protocol')
 
 class StreamExtension extends Message {
   send (message) {
@@ -375,7 +375,7 @@ module.exports = class ProtocolStream extends Duplex {
       while (indent.length < opts.indentationLvl) indent += ' '
     }
 
-    return 'HypercoreProtocolStream(\n' +
+    return 'BitProtocolStream(\n' +
       indent + '  publicKey: ' + opts.stylize((this.publicKey && pretty(this.publicKey)), 'string') + '\n' +
       indent + '  remotePublicKey: ' + opts.stylize((this.remotePublicKey && pretty(this.remotePublicKey)), 'string') + '\n' +
       indent + '  remoteAddress: ' + opts.stylize(this.remoteAddress, 'string') + '\n' +

@@ -1,5 +1,5 @@
 const SHP = require('@web4/simple-bit-protocol')
-const crypto = require('@web4/bit-crypto')
+const crypto = require('@web4/bitweb-crypto')
 const timeout = require('timeout-refresh')
 const inspect = require('inspect-custom-symbol')
 const Nanoguard = require('nanoguard')

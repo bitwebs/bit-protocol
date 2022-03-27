@@ -1,16 +1,16 @@
 {
   "name": "@web4/bit-protocol",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Stream that implements the BIT protocol",
   "main": "index.js",
   "dependencies": {
+    "@web4/bitweb-crypto": "^2.0.0",
+    "@web4/simple-bit-protocol": "^1.0.0",
     "abstract-extension": "^3.0.1",
     "debug": "^4.1.1",
-    "@web4/bitweb-crypto": "^2.0.0",
     "inspect-custom-symbol": "^1.1.0",
     "nanoguard": "^1.2.1",
     "pretty-hash": "^1.0.1",
-    "@web4/simple-bit-protocol": "^1.0.0",
     "streamx": "^2.1.0",
     "timeout-refresh": "^1.0.0"
   },
